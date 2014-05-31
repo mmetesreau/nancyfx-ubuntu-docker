@@ -1,0 +1,8 @@
+#################
+## VS
+#################
+
+src/bin/
+src/obj/
+src/packages/
+src/HelloWorld.userprefs
