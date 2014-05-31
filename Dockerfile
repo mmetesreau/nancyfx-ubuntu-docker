@@ -1,8 +1,9 @@
 FROM ubuntu:14.04
 
 RUN \
-  echo "deb http://archive.ubuntu.com/ubuntu trusty universe" >> /etc/apt/sources.list && \
-  apt-get install -y mono-complete
+  sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
+  apt-get update && \
+  apt-get install -y mono-runtime
 
 ADD . /publish
 
