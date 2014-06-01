@@ -5,7 +5,7 @@ RUN \
   apt-get update && \
   apt-get install -y mono-complete
 
-ADD ./publish/* /publish
+ADD ./publish/ /publish
 
 EXPOSE 8123
 
