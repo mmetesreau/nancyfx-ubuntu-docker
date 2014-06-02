@@ -9,4 +9,4 @@ ADD ./publish/ /publish
 
 EXPOSE 8123
 
-CMD ["mono","/publish/HelloWorld.exe","\"-d\""]
+CMD ["mono /publish/HelloWorld.exe '-d'"]
