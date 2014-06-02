@@ -17,11 +17,7 @@ namespace HelloWorld
 
 			host.Start (); 
 
-			if (args.Any (s => s.Equals ("-d", StringComparison.CurrentCultureIgnoreCase))) {
-				Thread.Sleep (Timeout.Infinite);
-			} else {
-				Console.ReadKey ();
-			}
+			Thread.Sleep (Timeout.Infinite);
 
 			host.Stop (); 
 		}
